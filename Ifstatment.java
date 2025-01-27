@@ -48,22 +48,71 @@
 
 import java.util.Scanner;
 
+// public class Ifstatment {
+//     public static void main(String ifString[]) {
+//         Scanner in = new Scanner(System.in);
+
+//         do {
+//             System.out.println("Enter To Turn On The Light");
+//             int i = in.nextInt();
+
+//             if (i >= 1) {
+//                 System.out.println("The Light Is On");
+//                 System.out.println("The Number Of People In A Room Is " + i);
+//             } else {
+//                 System.out.println("The Light Is Off!!");
+//                 System.out.println("The Room Is Emty");
+
+//             }
+//         } while (true);
+//     }
+// }
+
 public class Ifstatment {
-    public static void main(String ifString[]) {
-        Scanner in = new Scanner(System.in);
 
+    public static void main(String ages[]) {
+        Scanner people = new Scanner(System.in);
+
+        boolean InOrOut;
+        boolean peopleOne;
+        boolean peopleTwo;
+        int i = 0;
         do {
-            System.out.println("Enter To Turn On The Light");
-            int i = in.nextInt();
+            System.out.println("Are you coming in...?");
+            InOrOut = people.nextBoolean();
 
-            if (i >= 1) {
-                System.out.println("The Light Is On");
-                System.out.println("The Number Of People In A Room Is " + i);
+            if (InOrOut) {
+                System.out.println("Motion one state");
+                peopleOne = people.nextBoolean();
+
+                System.out.println("Motion two state");
+                peopleTwo = people.nextBoolean();
+
+                if (peopleOne == true) {
+                    if (peopleTwo == true) {
+                        if (i <= 0) {
+                            i = 0;
+                        }
+                        i--;
+                    }
+                }
             } else {
-                System.out.println("The Light Is Off!!");
-                System.out.println("The Room Is Emty");
+                System.out.println("Motion two state");
+                peopleTwo = people.nextBoolean();
 
+                System.out.println("Motion one state");
+                peopleOne = people.nextBoolean();
+
+                if (peopleTwo == true) {
+                    if (peopleOne == true) {
+                        if (i <= 0) {
+                            i = 0;
+                        }
+                        i++;
+                    }
+                }
             }
         } while (true);
+
     }
 }
