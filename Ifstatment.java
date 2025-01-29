@@ -164,10 +164,11 @@ public class Ifstatment {
 
         // initializer
         int j = 0;
+        int t = 0;
         // condition
-        while (j < 10) {
+        while (t < number.length) {
             // Ststament
-            System.out.println(j);
+            System.out.println(number[t]);
 
             // apdate
             j = j + 1;
