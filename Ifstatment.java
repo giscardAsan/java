@@ -46,7 +46,7 @@
 
 // }
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 // public class Ifstatment {
 //     public static void main(String ifString[]) {
@@ -65,54 +65,114 @@ import java.util.Scanner;
 
 //             }
 //         } while (true);
+//     } 
+// }
+
+// public class Ifstatment {
+
+//     public static void main(String ages[]) {
+//         Scanner people = new Scanner(System.in);
+
+//         boolean InOrOut;
+//         boolean peopleOne;
+//         boolean peopleTwo;
+//         int i = 0;
+//         do {
+//             System.out.println("Are you coming out...?");
+//             InOrOut = people.nextBoolean();
+
+//             if (InOrOut) {
+//                 System.out.println("Motion one state");
+//                 peopleOne = people.nextBoolean();
+
+//                 System.out.println("Motion two state");
+//                 peopleTwo = people.nextBoolean();
+
+//                 if (peopleOne == true) {
+//                     if (peopleTwo == true) {
+//                         if (i <= 0) {
+//                             i = 0;
+//                         } else {
+//                             i--;
+//                         }
+
+//                     }
+//                 }
+//             } else {
+//                 System.out.println("Motion two state");
+//                 peopleTwo = people.nextBoolean();
+
+//                 System.out.println("Motion one state");
+//                 peopleOne = people.nextBoolean();
+
+//                 if (peopleTwo == true) {
+//                     if (peopleOne == true) {
+//                         if (i < 0) {
+//                             i = 0;
+//                         } else {
+//                             i++;
+//                         }
+
+//                     }
+//                 }
+//             }
+//             if (i == 0) {
+//                 System.out.println("The Light Is Off");
+//                 System.out.println("The Room Is Emty");
+//             } else {
+//                 System.out.println("The Light Is On!");
+//                 System.out.println("The Number Of People In The Is " + i);
+
+//             }
+//         } while (true);
+
 //     }
 // }
 
 public class Ifstatment {
 
-    public static void main(String ages[]) {
-        Scanner people = new Scanner(System.in);
+    public static void main(String agr[]) {
 
-        boolean InOrOut;
-        boolean peopleOne;
-        boolean peopleTwo;
         int i = 0;
-        do {
-            System.out.println("Are you coming in...?");
-            InOrOut = people.nextBoolean();
 
-            if (InOrOut) {
-                System.out.println("Motion one state");
-                peopleOne = people.nextBoolean();
+        for (i = 10; i > 0; i = i - 1) {
+            System.out.println(i + "Hello World");
 
-                System.out.println("Motion two state");
-                peopleTwo = people.nextBoolean();
+        }
 
-                if (peopleOne == true) {
-                    if (peopleTwo == true) {
-                        if (i <= 0) {
-                            i = 0;
-                        }
-                        i--;
-                    }
-                }
-            } else {
-                System.out.println("Motion two state");
-                peopleTwo = people.nextBoolean();
+        for (i = 0; i < 10; i = i + 1) {
+            System.out.println(i + "Hello World");
 
-                System.out.println("Motion one state");
-                peopleOne = people.nextBoolean();
+        }
 
-                if (peopleTwo == true) {
-                    if (peopleOne == true) {
-                        if (i <= 0) {
-                            i = 0;
-                        }
-                        i++;
-                    }
-                }
+        char number[][] = {
+                { 'G', 'A', 'J' },
+                { 'A', 'J', 'G' },
+                { 'G', 'A', 'J' },
+        };
+
+        int rol;
+        int col;
+        for (rol = 0; rol < number.length; rol = rol + 1) {
+
+            for (col = 0; col < number.length; col = col + 1) {
+                System.out.println(number[rol][col] + " Hello World");
+
             }
-        } while (true);
+
+        }
+
+        // initializer
+        int j = 0;
+        // condition
+        while (j < 10) {
+            // Ststament
+            System.out.println(j);
+
+            // apdate
+            j = j + 1;
+        }
 
     }
+
 }
