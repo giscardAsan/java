@@ -133,17 +133,17 @@ public class Ifstatment {
 
     public static void main(String agr[]) {
 
-        int i = 0;
+        // int i = 0;
 
-        for (i = 10; i > 0; i = i - 1) {
-            System.out.println(i + "Hello World");
+        // for (i = 10; i > 0; i = i - 1) {
+        // System.out.println(i + "Hello World");
 
-        }
+        // }
 
-        for (i = 0; i < 10; i = i + 1) {
-            System.out.println(i + "Hello World");
+        // for (i = 0; i < 10; i = i + 1) {
+        // System.out.println(i + "Hello World");
 
-        }
+        // }
 
         char number[][] = {
                 { 'G', 'A', 'J' },
@@ -151,27 +151,33 @@ public class Ifstatment {
                 { 'G', 'A', 'J' },
         };
 
-        int rol;
-        int col;
-        for (rol = 0; rol < number.length; rol = rol + 1) {
+        // int rol;
+        // int col;
+        // for (rol = 0; rol < number.length; rol = rol + 1) {
 
-            for (col = 0; col < number.length; col = col + 1) {
-                System.out.println(number[rol][col] + " Hello World");
+        // for (col = 0; col < number.length; col = col + 1) {
+        // System.out.println(number[rol][col] + " Hello World");
 
-            }
+        // }
 
-        }
+        // }
 
         // initializer
         int j = 0;
         int t = 0;
         // condition
         while (t < number.length) {
-            // Ststament
-            System.out.println(number[t]);
 
-            // apdate
-            j = j + 1;
+            t = t + 1;
+
+            while (t < number.length) {
+                // Ststament
+                System.out.println(number[t][j]);
+
+                // apdate
+                j = j + 1;
+            }
+
         }
 
     }
