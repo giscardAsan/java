@@ -145,41 +145,41 @@ public class Ifstatment {
 
         // }
 
-        char number[][] = {
-                { 'G', 'A', 'J' },
-                { 'A', 'J', 'G' },
-                { 'G', 'A', 'J' },
-        };
+        // String number[][] = {
+        // { "Giscard", "Atta", "Jones" },
+        // { "Jones", "Atta", "Giscard" },
+        // { "Atta", "Giscard", "Jones" },
+        // };
 
-        // int rol;
-        // int col;
-        // for (rol = 0; rol < number.length; rol = rol + 1) {
-
-        // for (col = 0; col < number.length; col = col + 1) {
-        // System.out.println(number[rol][col] + " Hello World");
-
+        // for (int i = 0; i < number.length; i++) {
+        // for (int j = 0; j < number[i].length; j++) {
+        // System.out.println(number[i][j]);
         // }
-
         // }
 
         // initializer
-        int j = 0;
-        int t = 0;
+        // int j = 0;
+        // int t = 0;
         // condition
-        while (t < number.length) {
 
-            t = t + 1;
+        int i = 0;
 
-            while (t < number.length) {
-                // Ststament
-                System.out.println(number[t][j]);
-
-                // apdate
-                j = j + 1;
+        for (i = 0; i < man().length; i++) {
+            for (int j = 0; j < man()[i].length; j++) {
+                System.out.println(man()[i][j]);
             }
-
         }
 
+    }
+
+    public static String[][] man() {
+
+        String Engineering[][] = {
+                { "Giscard", "Atta", "jones" },
+                { "Atta", "jones", "Giscard" },
+                { "jones", "Giscard", "Atta" },
+        };
+        return Engineering;
     }
 
 }
