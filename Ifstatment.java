@@ -162,9 +162,8 @@ public class Ifstatment {
         // int t = 0;
         // condition
 
-        int i = 0;
+        for (int i = 0; i < man().length; i++) {
 
-        for (i = 0; i < man().length; i++) {
             for (int j = 0; j < man()[i].length; j++) {
                 System.out.println(man()[i][j]);
             }
@@ -173,13 +172,12 @@ public class Ifstatment {
     }
 
     public static String[][] man() {
-
-        String Engineering[][] = {
-                { "Giscard", "Atta", "jones" },
-                { "Atta", "jones", "Giscard" },
-                { "jones", "Giscard", "Atta" },
+        String Engineer[][] = {
+                { "Giscard", "Atta", "Jones" },
+                { "Jones", "Atta", "Giscar" },
+                { "Atta", "Giscard", "Jones" },
         };
-        return Engineering;
+        return Engineer;
     }
 
 }
