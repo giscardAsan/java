@@ -1,5 +1,5 @@
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
 // public class Ifstatment{
 
@@ -162,22 +162,54 @@ public class Ifstatment {
         // int t = 0;
         // condition
 
-        for (int i = 0; i < man().length; i++) {
+        // for (int i = 0; i < man().length; i++) {
 
-            for (int j = 0; j < man()[i].length; j++) {
-                System.out.println(man()[i][j]);
-            }
-        }
+        // for (int j = 0; j < man()[i].length; j++) {
+        // System.out.println(man()[i][j]);
+        // }
+        // }
+
+        Scanner people = new Scanner(System.in);
+
+        double number1;
+        double number2;
+        double number3;
+
+        System.out.println("Enter your number");
+        number1 = people.nextDouble();
+
+        System.out.println("Enter your number");
+        number2 = people.nextDouble();
+
+        System.out.println("Enter your number");
+        number3 = people.nextDouble();
+
+        System.out.println(Thelargestnumber(number1, number2, number3));
 
     }
 
-    public static String[][] man() {
-        String Engineer[][] = {
-                { "Giscard", "Atta", "Jones" },
-                { "Jones", "Atta", "Giscar" },
-                { "Atta", "Giscard", "Jones" },
-        };
-        return Engineer;
+    // public static String[][] man() {
+    // String Engineer[][] = {
+    // { "Giscard", "Atta", "Jones" },
+    // { "Jones", "Atta", "Giscar" },
+    // { "Atta", "Giscard", "Jones" },
+    // };
+    // return Engineer;
+    // }
+
+    public static String Thelargestnumber(double number1, double number2, double number3) {
+
+        if (number1 > number2 && number1 > number3) {
+            return "Number first is the largest number";
+
+        } else if (number2 > number1 && number2 > number3) {
+            return "Number two is the largest number";
+
+        } else if (number3 > number1 && number3 > number2) {
+            return "Number three is the largest number";
+        }
+
+        return "none of them are gratest";
     }
 
 }
