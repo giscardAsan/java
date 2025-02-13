@@ -12,9 +12,8 @@ public class customclass {
         System.out.println(list.get(1));
 
         snakes obSnakes = new snakes();
-        obSnakes.animal();
-        obSnakes.lion();
-        obSnakes.snake();
+        obSnakes.add("Giscard");
+        System.out.println(obSnakes.get(0));
 
     }
 

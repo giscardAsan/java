@@ -1,6 +1,8 @@
 package Myclasslist;
 
-public class snakes extends lions {
+import java.util.ArrayList;
+
+public class snakes extends ArrayList<String> {
 
     public snakes() {
 
